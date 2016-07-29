@@ -41,16 +41,16 @@ defmodule ExSentry.Mixfile do
   defp deps do
     [
       {:fuzzyurl, "~> 0.9.0"},
-      {:uuid, "~> 1.1"},
-      {:timex, "~> 2.1"},
+      {:uuid, "~> 1.1.4"},
+      {:timex, "~> 3.0.4"},
       {:hackney, "~> 1.4"},
       {:poison, "~> 1.5 or ~> 2.0"},
-      {:plug, "~> 1.0"},
+      {:plug, "~> 1.1.6"},
       {:ex_spec, github: "appcues/ex_spec", tag: "1.1.0-elixir13", only: :test},
       {:mock, "~> 0.1.1", only: :test},
-      {:excoveralls, "~> 0.4.3", only: :test},
-      {:earmark, "~> 0.1", only: :dev},
-      {:ex_doc, "~> 0.11", only: :dev},
+      {:excoveralls, github: "parroty/excoveralls", only: :test},
+      {:earmark, "~> 1.0.1", only: :dev},
+      {:ex_doc, "~> 0.13", only: :dev},
     ]
   end
 end
